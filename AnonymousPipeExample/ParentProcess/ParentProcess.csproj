@@ -7,8 +7,8 @@
     <ProjectGuid>{D8DE91B5-65BD-4617-897A-28506148F836}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SomeApp</RootNamespace>
-    <AssemblyName>SomeApp</AssemblyName>
+    <RootNamespace>ParentProcess</RootNamespace>
+    <AssemblyName>ParentProcess</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

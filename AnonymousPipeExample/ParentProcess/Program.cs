@@ -4,22 +4,24 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Pipes;
 
-namespace SomeApp
+namespace ParentProcess
 {
     class Program
     {
+        const string CHILDPROCNAME = "ChildProcess.exe";
+
         static void Main(string[] args)
         {
             Console.WriteLine("Started application (Process A)...");
             
             var result = new List<string>();
 
-            // Create separate process
+            // Create child process
             var anotherProcess = new Process
             {
                 StartInfo =
                 {
-                    FileName = "SomeOtherApp.exe",
+                    FileName = CHILDPROCNAME,
                     CreateNoWindow = true,
                     UseShellExecute = false
                 }
